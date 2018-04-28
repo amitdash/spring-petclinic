@@ -19,6 +19,7 @@ import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotEmpty;
 
+
 /**
  * Simple JavaBean domain object representing an person.
  *
@@ -36,7 +37,7 @@ public class Person extends BaseEntity {
     private String lastName;
 
     public String getFirstName() {
-        return this.firstName;
+        return this.firstName + "hello";
     }
 
     public void setFirstName(String firstName) {
